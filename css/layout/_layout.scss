@@ -1,0 +1,25 @@
+.container {
+  max-width: $max-width;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  .logo {
+    height: 40px;
+  }
+  ul.menu {
+    display: flex;
+    li {
+      margin-left: 60px;
+      a {
+        padding: 10px;
+        display: block;
+        color: $primary;
+      }
+    }
+  }
+}

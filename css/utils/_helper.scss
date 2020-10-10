@@ -1,0 +1,119 @@
+// Spacing | 間距
+// 
+$space: 1rem !default;
+$spacer: (
+  0: $space * 0,
+  1: $space * 0.25,
+  2: $space * 0.5,
+  3: $space,
+  4: $space * 1.5,
+  5: $space * 2
+);
+
+// 大小
+$size: (
+  'sm': 0.25rem,
+  'md': 0.5rem,
+  'lg': 1rem
+);
+
+// 顏色
+$theme: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'alert': $alert,
+  'dark': $dark,
+  'white': $white
+);
+// margin | padding
+@each $key, $value in $spacer {
+  .m-#{$key} {
+    margin: $value !important;
+  }
+  .mt-#{$key} {
+    margin-top: $value !important;
+  }
+  .ml-#{$key} {
+    margin-left: $value !important;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value !important;
+  }
+  .mr-#{$key} {
+    margin-right: $value !important;
+  }
+  // padding
+  .p-#{$key} {
+    padding: $value !important;
+  }
+  .pt-#{$key} {
+    padding-top: $value !important;
+  }
+  .pl-#{$key} {
+    padding-left: $value !important;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value !important;
+  }
+  .pr-#{$key} {
+    padding-right: $value !important;
+  }
+}
+
+// width
+@for $i from 1 through 5 {
+  .w#{$i*25} {
+    width: $i * 25%;
+  }
+}
+
+// radius
+@each $key, $value in $size {
+  .round-#{$key} {
+    border-radius: $value !important;
+  }
+}
+
+// color
+@each $key, $value in $theme {
+  .bg-#{$key} {
+    background-color: $value !important;
+  }
+  .#{$key} {
+    color: $value !important;
+  }
+}
+
+// flex
+.flex {
+  display: flex;
+}
+.fx-justify-center {
+  justify-content: center;
+}
+.fx-justify-end {
+  justify-content: flex-end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// others
+.text-center {
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.mark {
+  color: $alert;
+}
+.d-inlineBk {
+  display: inline-block;
+}
+.m-auto {
+  margin: auto;
+}
+.border-l {
+  border-left: 1px solid $secondary;
+}
