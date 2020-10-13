@@ -6,10 +6,13 @@
     border-right: 1px solid $gray;
     width: 3.75rem;
     height: 3.75rem;
-    font-size: 1.25rem;
-    padding: 1.125rem;
-    text-align: center;
-    color:$primary;
+    a {
+      display: block;
+      font-size: 1.25rem;
+      padding: 1.125rem;
+      text-align: center;
+      color:$primary;
+    }
   }
   &__item:last-of-type {
     border-right: none;

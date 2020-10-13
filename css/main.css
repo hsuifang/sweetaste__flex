@@ -798,7 +798,9 @@ header ul.menu li a {
 
 .card__cover__label {
   padding: 10px;
-  width: 36px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
   background-color: #37523d;
   color: #fff;
 }
@@ -851,6 +853,10 @@ header ul.menu li a {
   border-right: 1px solid #EAF0ED;
   width: 3.75rem;
   height: 3.75rem;
+}
+
+.pagination__item a {
+  display: block;
   font-size: 1.25rem;
   padding: 1.125rem;
   text-align: center;
@@ -869,31 +875,47 @@ header ul.menu li a {
 }
 
 .nav {
+  width: 300px;
   margin-right: 20px;
 }
 
 .nav__item {
-  width: 300px;
-  text-align: center;
-  color: #37523d;
   border: 1px solid #eee;
   border-bottom: none;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 1.5rem 0;
 }
 
 .nav__item:last-of-type {
   border-bottom: 1px solid #eee;
 }
 
-.nav__item--title {
-  background-color: #37523d;
+.nav__item:hover {
+  background-color: rgba(55, 82, 61, 0.5);
   color: #fff;
+}
+
+.nav__item a {
+  display: block;
+  color: #37523d;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav__item--active {
   background-color: #e7eeea;
+}
+
+.discript {
+  border: 1px solid #eee;
+  border-bottom: none;
+  width: 300px;
+  background-color: #37523d;
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .content {

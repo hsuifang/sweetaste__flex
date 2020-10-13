@@ -5,27 +5,42 @@
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/student-week1/banner.png');
 }
 .nav {
+  width: 300px;
   margin-right: 20px;
   &__item {
-    width: 300px;
-    text-align: center;
-    color: $primary;
     border: 1px solid #eee;
     border-bottom: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1.5rem 0;
     &:last-of-type {
       border-bottom: 1px solid #eee;
     }
-  }
-  &__item--title {
-    background-color: $primary;
-    color: $white;
+    &:hover {
+      background-color: rgba($primary, 0.5);
+      color: $white;
+    }
+    a {
+      display: block;
+      color: $primary;
+      padding: 1.5rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
   }
   &__item--active {
     background-color: $secondary;
   }
+}
+
+.discript {
+  border: 1px solid #eee;
+  border-bottom: none;
+  width: 300px;
+  background-color: $primary;
+  color: $white;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 .content {
   display: flex;
