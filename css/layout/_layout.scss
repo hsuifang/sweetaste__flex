@@ -15,10 +15,17 @@ header {
     display: flex;
     li {
       margin-left: 60px;
+      cursor: pointer;
       a {
         padding: 10px;
         display: block;
         color: $primary;
+      }
+      &:hover {
+        border-bottom: 5px solid $primary;
+        a {
+          font-weight: bold;
+        }
       }
     }
   }

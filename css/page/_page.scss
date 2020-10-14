@@ -4,9 +4,23 @@
   margin-bottom: 60px;
   background-image: url('https://hexschool.github.io/webLayoutTraining1st/student-week1/banner.png');
 }
-.nav {
+
+
+.navBar {
   width: 300px;
   margin-right: 20px;
+  &__title {
+    border: 1px solid #eee;
+    border-bottom: none;
+    background-color: $primary;
+    color: $white;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.nav {
   &__item {
     border: 1px solid #eee;
     border-bottom: none;
@@ -31,18 +45,8 @@
   }
 }
 
-.discript {
-  border: 1px solid #eee;
-  border-bottom: none;
-  width: 300px;
-  background-color: $primary;
-  color: $white;
-  padding: 1.5rem 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
 .content {
+  width: 620px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

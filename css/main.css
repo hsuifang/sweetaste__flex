@@ -762,12 +762,21 @@ header ul.menu {
 
 header ul.menu li {
   margin-left: 60px;
+  cursor: pointer;
 }
 
 header ul.menu li a {
   padding: 10px;
   display: block;
   color: #37523d;
+}
+
+header ul.menu li:hover {
+  border-bottom: 5px solid #37523d;
+}
+
+header ul.menu li:hover a {
+  font-weight: bold;
 }
 
 .card {
@@ -812,21 +821,21 @@ header ul.menu li a {
   border: 1px solid #EAF0ED;
 }
 
-.card__item p {
+.card__item p, .card__item h3 {
   padding: 20px 0;
   text-align: center;
   font-size: 1.25rem;
   color: #37523d;
 }
 
-.card__item p:first-of-type {
-  border-right: 1px solid #EAF0ED;
+.card__item h3 {
   width: 55%;
+  line-height: 1.2;
 }
 
-.card__item p:last-of-type {
+.card__item p {
+  border-left: 1px solid #EAF0ED;
   width: 45%;
-  line-height: 1.2;
 }
 
 .card__btn {
@@ -837,6 +846,15 @@ header ul.menu li a {
   font-size: 1.5rem;
   padding: 1rem 0;
   font-weight: bold;
+}
+
+.card__btn:hover {
+  color: rgba(55, 82, 61, 0.8);
+}
+
+.card__btn:active {
+  background-color: rgba(55, 82, 61, 0.8);
+  color: #fff;
 }
 
 .pagination {
@@ -855,6 +873,14 @@ header ul.menu li a {
   height: 3.75rem;
 }
 
+.pagination__item:hover {
+  background-color: #e7eeea;
+}
+
+.pagination__item:last-of-type {
+  border-right: none;
+}
+
 .pagination__item a {
   display: block;
   font-size: 1.25rem;
@@ -863,8 +889,16 @@ header ul.menu li a {
   color: #37523d;
 }
 
-.pagination__item:last-of-type {
-  border-right: none;
+.pagination__item--acitve {
+  background-color: #37523d;
+}
+
+.pagination__item--acitve:hover a {
+  color: #37523d;
+}
+
+.pagination__item--acitve a {
+  color: white;
 }
 
 .banner {
@@ -874,9 +908,20 @@ header ul.menu li a {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/banner.png");
 }
 
-.nav {
+.navBar {
   width: 300px;
   margin-right: 20px;
+}
+
+.navBar__title {
+  border: 1px solid #eee;
+  border-bottom: none;
+  background-color: #37523d;
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .nav__item {
@@ -906,19 +951,8 @@ header ul.menu li a {
   background-color: #e7eeea;
 }
 
-.discript {
-  border: 1px solid #eee;
-  border-bottom: none;
-  width: 300px;
-  background-color: #37523d;
-  color: #fff;
-  padding: 1.5rem 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-}
-
 .content {
+  width: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

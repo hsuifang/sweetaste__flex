@@ -6,6 +6,12 @@
     border-right: 1px solid $gray;
     width: 3.75rem;
     height: 3.75rem;
+    &:hover {
+      background-color: $secondary;
+    }
+    &:last-of-type {
+      border-right: none;
+    }
     a {
       display: block;
       font-size: 1.25rem;
@@ -14,7 +20,15 @@
       color:$primary;
     }
   }
-  &__item:last-of-type {
-    border-right: none;
+  &__item--acitve {
+    background-color: $primary;
+    &:hover {
+      a {
+        color: $primary;
+      }
+    }
+    a {
+      color: white;
+    }
   }
 }
