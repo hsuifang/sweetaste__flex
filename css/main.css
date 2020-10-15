@@ -858,7 +858,6 @@ header ul.menu li:hover a {
 }
 
 .pagination {
-  border: 1px solid #EAF0ED;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -868,7 +867,8 @@ header ul.menu li:hover a {
 }
 
 .pagination__item {
-  border-right: 1px solid #EAF0ED;
+  border: 1px solid #EAF0ED;
+  border-right: none;
   width: 3.75rem;
   height: 3.75rem;
 }
@@ -878,7 +878,7 @@ header ul.menu li:hover a {
 }
 
 .pagination__item:last-of-type {
-  border-right: none;
+  border: 1px solid #EAF0ED;
 }
 
 .pagination__item a {

@@ -1,16 +1,16 @@
 .pagination {
-  border: 1px solid $gray;
   display: flex;
   align-items: center;
   &__item {
-    border-right: 1px solid $gray;
+    border: 1px solid $gray;
+    border-right: none;
     width: 3.75rem;
     height: 3.75rem;
     &:hover {
       background-color: $secondary;
     }
     &:last-of-type {
-      border-right: none;
+      border: 1px solid $gray;
     }
     a {
       display: block;
